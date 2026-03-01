@@ -1,0 +1,315 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(to bottom,#e9f2ec,#f5f5f5);
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px 20px;
+color:#333;
+}
+
+/* LOGO */
+
+.logo{
+text-align:center;
+margin-bottom:15px;
+}
+
+.logo img{
+width:140px;
+}
+
+/* SLOGAN */
+
+.slogan{
+font-size:20px;
+margin-bottom:30px;
+font-weight:500;
+text-align:center;
+}
+
+/* CARD */
+
+.card{
+background:white;
+width:100%;
+max-width:520px;
+border-radius:15px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+overflow:hidden;
+margin-bottom:30px;
+}
+
+.card-header{
+background:#10b14a;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.card-header.secondary{
+background:#0e9b40;
+}
+
+.card-body{
+padding:25px;
+}
+
+/* INPUT */
+
+label{
+font-weight:600;
+display:block;
+margin-bottom:8px;
+}
+
+input[type="number"]{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-bottom:20px;
+font-size:16px;
+}
+
+/* DESCUENTO */
+
+.discount-box{
+background:#fff6ef;
+border:1px solid #f3c9a9;
+padding:22px;
+border-radius:12px;
+margin-bottom:20px;
+width:100%;
+}
+
+.discount-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+.discount-header span{
+color:#ff6b00;
+font-weight:bold;
+font-size:22px;
+}
+
+/* SLIDER COMPLETO */
+
+input[type="range"]{
+width:100%;
+appearance:none;
+height:8px;
+border-radius:10px;
+background:#f3c9a9;
+outline:none;
+margin-top:10px;
+}
+
+/* BARRA */
+
+input[type="range"]::-webkit-slider-runnable-track{
+height:8px;
+border-radius:10px;
+background:#f3c9a9;
+}
+
+/* BOTON */
+
+input[type="range"]::-webkit-slider-thumb{
+appearance:none;
+height:18px;
+width:18px;
+border-radius:50%;
+background:#ff6b00;
+cursor:pointer;
+margin-top:-5px;
+box-shadow:0 2px 6px rgba(0,0,0,0.3);
+}
+
+input[type="range"]::-moz-range-thumb{
+height:18px;
+width:18px;
+border-radius:50%;
+background:#ff6b00;
+cursor:pointer;
+border:none;
+}
+
+/* NUMEROS DEL SLIDER */
+
+.range-labels{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-top:5px;
+color:#777;
+}
+
+.slider-text{
+font-size:12px;
+text-align:center;
+margin-top:8px;
+color:#666;
+}
+
+/* BOTONES */
+
+.buttons{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+button{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#10b14a;
+color:white;
+}
+
+.btn-primary:hover{
+background:#0e9b40;
+}
+
+.btn-secondary{
+background:#e0e0e0;
+}
+
+/* ESTRUCTURA TARIFAS */
+
+.estructura{
+margin-top:20px;
+background:#eaf6ee;
+border-left:4px solid #10b14a;
+padding:18px;
+border-radius:10px;
+}
+
+.estructura h4{
+color:#0e9b40;
+margin-bottom:10px;
+}
+
+.estructura p{
+margin:4px 0;
+}
+
+.adicional{
+color:#ff6b00;
+font-weight:600;
+}
+
+.descuento-text{
+color:#e53935;
+font-weight:600;
+}
+
+.estructura small{
+display:block;
+margin-top:10px;
+color:#666;
+}
+
+/* COSTOS OPERACIONALES */
+
+.costos-grid{
+display:flex;
+justify-content:space-between;
+gap:15px;
+}
+
+.costo-item{
+flex:1;
+text-align:center;
+background:#f8fdfb;
+padding:15px;
+border-radius:10px;
+border:1px solid #e0f3e8;
+}
+
+.gasolina strong{
+color:#0a9f3f;
+}
+
+.mantenimiento strong{
+color:#ff6b00;
+}
+
+.otros strong{
+color:#d32f2f;
+}
+
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(4px);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+padding:30px;
+border-radius:15px;
+width:90%;
+max-width:420px;
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+.modal-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+
+.close{
+font-size:22px;
+cursor:pointer;
+}
+
+.modal-btn{
+margin-top:10px;
+}
+
+/* COMPROBANTE */
+
+.imagen-comprobante{
+position:absolute;
+left:-9999px;
+top:-9999px;
+width:400px;
+padding:25px;
+background:white;
+border-radius:15px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:20px;
+text-align:center;
+font-size:14px;
+color:#777;
+}
